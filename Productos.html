@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Venta de productos</title>
+
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="Productos.css" />
+  </head>
+  <body>
+    <header class="container-fluid bg-dark position-sticky top-0">
+      <ul
+        class="nav nav-pills mb-3 py-3 container"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item text-primary" role="presentation">
+          <a
+          href="inicio.html"
+            class="nav-link "
+            id="pills-home-tab"
+            type="button"
+            role="tab"
+            aria-controls="pills-home"
+            aria-selected="true"
+            >INICIO</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="pills-profile-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-profile"
+            type="button"
+            role="tab"
+            aria-controls="pills-profile"
+            aria-selected="false"
+            >PRODUCTOS</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-contact-tab"
+            data-bs-toggle="pill"
+            data-bs-target="#pills-contact"
+            type="button"
+            role="tab"
+            aria-controls="pills-contact"
+            aria-selected="false"
+            >CARRITO</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <div class="alert container position-sticky top-0 alert-primary hide" role="alert">
+    Producto Añadido al carrito!
+    </div>
+    <div class="alert container position-sticky top-0 alert-danger remove" role="alert">
+      Producto removido!
+    </div>
+
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade "
+        id="pills-home"
+        role="tabpanel"
+        aria-labelledby="pills-home-tab"
+      >
+      </div>
+      <div
+        class="tab-pane fade show active container"
+        id="pills-profile"
+        role="tabpanel"
+        aria-labelledby="pills-profile-tab"
+      >
+        <h2 class="h4 m-4 text-primary">RD&F</h2>
+
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4">
+
+          <div class="col d-flex justify-content-center mb-4">
+            <div class="card shadow mb-1 bg-dark rounded" style="width: 18rem;">
+              <h5 class="card-title pt-2 text-center text-primary">Aceite</h5>
+              <img src="./img/aceite.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+          
+                <p class="card-text text-white-50 description">Aceite Diana vitaminas x 900 ml.</p>
+                <h5 class="text-primary">Precio: <span class="precio">$ 8.190</span></h5>
+                <div class="d-grid gap-2">
+                <button class="btn btn-primary">Añadir al carrito</button>
+                </div>
+              </div>
+            </div>
+            </div>
+
+
+            <div class="col d-flex justify-content-center mb-4">
+              <div class="card shadow mb-1 bg-dark rounded" style="width: 18rem;">
+                <h5 class="card-title pt-2 text-center text-primary">Arroz</h5>
+                <img src="./img/Arroz.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+            
+                  <p class="card-text text-white-50 description">BOLSA X 3000 GRS.</p>
+                  <h5 class="text-primary">Precio: <span class="precio">$ 10.300</span></h5>
+                  <div class="d-grid gap-2">
+                  <button class="btn btn-primary">Añadir al carrito</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+
+
+              <div class="col d-flex justify-content-center mb-4">
+                <div class="card shadow mb-1 bg-dark rounded" style="width: 18rem;">
+                  <h5 class="card-title pt-2 text-center text-primary">Carne</h5>
+                  <img src="./img/carne.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+              
+                    <p class="card-text text-white-50 description">Carne para freir bota en bandeja x 450gr.</p>
+                    <h5 class="text-primary">Precio: <span class="precio">$ 8.417</span></h5>
+                    <div class="d-grid gap-2">
+                    <button class="btn btn-primary">Añadir al carrito</button>
+                    </div>
+                  </div>
+                </div>
+                </div>
+
+
+                <div class="col d-flex justify-content-center mb-4">
+                  <div class="card shadow mb-1 bg-dark rounded" style="width: 18rem;">
+                    <h5 class="card-title pt-2 text-center text-primary">Pollo</h5>
+                    <img src="./img/pollo.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                
+                      <p class="card-text text-white-50 description">POLLO MERCAPOLLO FRESCO CANAL X KG.</p>
+                      <h5 class="text-primary">Precio: <span class="precio">$ 8.200</span></h5>
+                      <div class="d-grid gap-2">
+                      <button class="btn btn-primary">Añadir al carrito</button>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+
+
+                  <div class="col d-flex justify-content-center mb-4">
+                    <div class="card shadow mb-1 bg-dark rounded" style="width: 18rem;">
+                      <h5 class="card-title pt-2 text-center text-primary">Aguacate</h5>
+                      <img src="./img/Aguacatetienda.jpg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                  
+                        <p class="card-text text-white-50 description">Aguacate injerto x unidad.</p>
+                        <h5 class="text-primary">Precio: <span class="precio">4.890</span></h5>
+                        <div class="d-grid gap-2">
+                        <button class="btn btn-primary">Añadir al carrito</button>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+
+
+                    <div class="col d-flex justify-content-center mb-4">
+                      <div class="card shadow mb-1 bg-dark rounded" style="width: 18rem;">
+                        <h5 class="card-title pt-2 text-center text-primary">Limones</h5>
+                        <img src="./img/limon.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                    
+                          <p class="card-text text-white-50 description">LIMON TAHITI ECONOMICO X KG.</p>
+                          <h5 class="text-primary">Precio: <span class="precio">$ 4.200</span></h5>
+                          <div class="d-grid gap-2">
+                          <button class="btn btn-primary">Añadir al carrito</button>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+
+          
+                      <div class="col d-flex justify-content-center mb-4">
+                        <div class="card shadow mb-1 bg-dark rounded" style="width: 18rem;">
+                          <h5 class="card-title pt-2 text-center text-primary">Leche</h5>
+                          <img src="./img/leche.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                      
+                            <p class="card-text text-white-50 description">Leche Bolsa larga vida Entera x 1100ml Alquería.</p>
+                            <h5 class="text-primary">Precio: <span class="precio">$ 3.590</span></h5>
+                            <div class="d-grid gap-2">
+                            <button class="btn btn-primary">Añadir al carrito</button>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+
+                        <div class="col d-flex justify-content-center mb-4">
+                          <div class="card shadow mb-1 bg-dark rounded" style="width: 18rem;">
+                            <h5 class="card-title pt-2 text-center text-primary">Huevos</h5>
+                            <img src="./img/huevos.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                        
+                              <p class="card-text text-white-50 description">HUEVO KIKES ROJO TIPO A X 30 Un.</p>
+                              <h5 class="text-primary">Precio: <span class="precio">$ 11.950</span></h5>
+                              <div class="d-grid gap-2">
+                              <button class="btn btn-primary">Añadir al carrito</button>
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="col d-flex justify-content-center mb-4">
+                            <div class="card shadow mb-1 bg-dark rounded" style="width: 18rem;">
+                              <h5 class="card-title pt-2 text-center text-primary">Sal</h5>
+                              <img src="./img/Sal.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                          
+                                <p class="card-text text-white-50 description">Bolsa Sal Refisal x 500 g.</p>
+                                <h5 class="text-primary">Precio: <span class="precio">$ 1.690</span></h5>
+                                <div class="d-grid gap-2">
+                                <button class="btn btn-primary">Añadir al carrito</button>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+                            <div class="col d-flex justify-content-center mb-4">
+                              <div class="card shadow mb-1 bg-dark rounded" style="width: 18rem;">
+                                <h5 class="card-title pt-2 text-center text-primary">Cebolla cabezona</h5>
+                                <img src="./img/cebolla.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                            
+                                  <p class="card-text text-white-50 description">CEBOLLA CABEZONA BLANCA X KG.</p>
+                                  <h5 class="text-primary">Precio: <span class="precio">$ 4.700</span></h5>
+                                  <div class="d-grid gap-2">
+                                  <button class="btn btn-primary">Añadir al carrito</button>
+                                  </div>
+                                </div>
+                              </div>
+                              </div>
+                              <div class="col d-flex justify-content-center mb-4">
+                                <div class="card shadow mb-1 bg-dark rounded" style="width: 18rem;">
+                                  <h5 class="card-title pt-2 text-center text-primary">Tomate</h5>
+                                  <img src="./img/tomate.jpg" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                              
+                                    <p class="card-text text-white-50 description">Tomate FRESCOCAMPO kosher x 1000 g.</p>
+                                    <h5 class="text-primary">Precio: <span class="precio">$ 9.300</span></h5>
+                                    <div class="d-grid gap-2">
+                                    <button class="btn btn-primary">Añadir al carrito</button>
+                                    </div>
+                                  </div>
+                                </div>
+                                </div>
+                              </div>
+                            </div>
+
+<div
+        class="tab-pane fade carrito"
+        id="pills-contact"
+        role="tabpanel"
+        aria-labelledby="pills-contact-tab"
+      >
+      <br>
+<table class="table table table-dark table-hover">
+  <thead>
+    <tr class="text-primary">
+      <th scope="col">#</th>
+      <th scope="col">Productos</th>
+      <th scope="col">Precio</th>
+      <th scope="col">Cantidad</th>
+    </tr>
+  </thead>
+  <tbody class="tbody">
+    
+  </tbody>
+</table>
+<br><br>
+<div class="row mx-4">
+  <div class="col">
+    <h3 class="itemCartTotal text-white">Total: 0</h3>
+    <div class="col d-flex justify-content-end">
+      <button class="btn btn-success">COMPRAR</button>
+    </div>
+  </div>
+</div>
+
+      <footer class="bg-dark p-3 mt-5">
+        <p class="text-center m-0 text-muted">Derechos reservados &copy;2021@Lina Fernanda Montes Suarez</p>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>   
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>    
+<script src="Productos.js"></script>
+      </body>
+      </html>

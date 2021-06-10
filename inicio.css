@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+.rojo{
+    color: red;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background:  rgb(0, 0, 0);
+}
+header{
+    width: 100%;
+}
+.header .main{
+    width: 90%;
+    margin: 0 auto;
+}
+.navbar{
+    margin-top: 30px;
+}
+.navbar .brand{
+    display: flex;
+    margin: 20px 70px;
+    color:#d10505;
+}
+.navbar .brand i{
+    font-size: 1.6em;
+}
+.navbar .brand h3{
+    font-size: 1.3em;
+    margin: 5px 5px;
+}
+.menu ul{
+    display: flex;
+    justify-content:flex-end;
+    margin: -30px;
+}
+.menu ul li{
+    list-style: none;
+    margin-right: 70px;
+}
+.menu ul li a{
+    color: yellow;
+    text-decoration: none;
+    font-size: 1.3em;;
+}
+.navbar .toggle-menu{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 25px;
+}
+.navbar .toggle-menu i{
+    font-size: 1.8em;
+    color: yellow;
+    display: none;
+}
+.container-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+}
+.container-info img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 500px;
+    margin: 100px 30px;
+}
+.container-info h1{
+    font-size: 3.0em;
+    font-family: 'Pattaya', sans-serif;
+    animation: left-move 1.5s ease-in;
+}
+.container-info h2{
+    font-size:1.5em;
+    animation: right-move 1.5s ease-in;
+}
+.container-info .btn{
+    font-size: 1.2em;
+    width: 200px;
+    padding: 3px;
+    background: #d10505;
+    border-radius: 50px;
+    border: none;
+    color: yellow;
+    animation: right-move 1.5s ease-in;
+}
+.container-info .img-content img{
+    max-width: 100%;
+    animation: up-move 1.7s ease-in;
+}
+.container-info .img-content img:hover{
+    filter: grayscale(60%);
+}
+.container-info .social-content li{
+    list-style: none;
+    margin: 20px;
+    animation: left-move 1.5s ease-in;
+    cursor: pointer;
+}
+.container-info .social-content i{
+    font-size: 1.3em;
+    color: yellow;
+}
+.container-info .social-content i:hover{
+    transform: scale(1.5);
+}
+header .wave{
+    display: flex;
+}
+.copy{
+    color: yellow;
+}
+
+@media(max-width:570px){
+    .navbar .brand i{
+        margin-left: -30px;
+    }
+    .navbar .toggle-menu i{
+        display: block;
+        margin: -60px 30px;
+        cursor: pointer;
+    }
+    .navbar .menu ul{
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        background-color: rgb(0, 0, 0);
+        position: fixed;
+        margin-top: 30px;
+        transform: translateX(-120%);
+        transition: 1s ease-in;
+    }
+    .navbar .menu .menu-on{
+        transform: translateX(-4%);
+    }
+    .navbar .menu ul li{
+        margin: 30px;
+        text-transform: uppercase;
+    }
+    .container-info .social-content i{
+        display: none;
+    }
+    .container-info{
+        flex-wrap: wrap-reverse;
+        margin: -50px 50px;
+    }
+    .container-info h1{
+        font-size: 2.5em;
+    }
+    .container-info h2{
+        font-size: 1.5em;
+    }
+    header .wave{
+        margin-top: 70px;
+    }
+    .copy{
+        color: yellow;
+    }
+}
+@keyframes left-move{
+    0%{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes right-move{
+    0%{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes up-move{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
